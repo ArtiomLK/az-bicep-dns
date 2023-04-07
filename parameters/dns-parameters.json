@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "tags": {
+      "value": {
+        "project": "bicephub",
+        "env": "dev",
+        "architecture": "alz"
+      }
+    },
+
+    "dns_list": {
+      "value": [
+        "domain-from-param-1.com",
+        "domain-from-param-2.net",
+        "domain-from-param-n.ai"
+      ]
+    }
+  }
+}
