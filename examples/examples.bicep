@@ -16,7 +16,7 @@ var dns_list = [
 ]
 
 // ------------------------------------------------------------------------------------------------
-// Windows App Service examples
+// DNS Deployment Examples
 // ------------------------------------------------------------------------------------------------
 module DNSDeployment '../main.bicep' = {
   name: 'DNSDeployment'
