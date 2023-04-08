@@ -18,3 +18,13 @@ az deployment group create \
 --template-file dns-deployment.bicep \
 --parameters @dns-parameters.json
 ```
+
+### [Reference Examples][1]
+
+## Additional Resources
+
+- Azure DNS
+- [MS | Learn | Tutorial: Host your domain in Azure DNS][2]
+
+[1]: ./examples/examples.bicep
+[2]: https://learn.microsoft.com/en-us/azure/dns/dns-delegate-domain-azure-dns
