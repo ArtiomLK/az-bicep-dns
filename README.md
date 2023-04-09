@@ -17,6 +17,10 @@ az deployment group create \
 --subscription '########-####-####-####-############' \
 --template-file dns-deployment.bicep \
 --parameters @dns-parameters.json
+
+# Validate NS
+nslookup -type=SOA artiomlk.com
+nslookup -type=SOA www.artiomlk.com
 ```
 
 ### [Reference Examples][1]
