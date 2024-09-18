@@ -2,6 +2,7 @@ targetScope = 'resourceGroup'
 // ------------------------------------------------------------------------------------------------
 // Deployment parameters
 // ------------------------------------------------------------------------------------------------
+param location string = resourceGroup().location
 // Sample tags parameters
 var tags = {
   project: 'bicephub'
@@ -13,6 +14,7 @@ var dns_list = [
   'domain1.com'
   'domain2.com'
   'domainN.com'
+  'public.${location}.azmk8s.io'
 ]
 
 // ------------------------------------------------------------------------------------------------
